@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+
+  <body>
+    <nav
+      id="aboutNavbar"
+      class="navbar navbar-expand-md navbar fixed-top p-0 m-0"
+    >
+      <div class="container-fluid">
+        <a href="home.html" class="navbar-brand ms-1">James W. R.</a>
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarLinks"
+          aria-controls="navbarLinks"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarLinks">
+          <div class="navbar-nav ms-auto">
+            <a href="home.html" class="nav-item nav-link">Home</a>
+            <a href="portfolio.html" class="nav-item nav-link">Gallery</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row justify-content-around align-items-center">
+        <div
+          class="frame rounded-2 p-2 p-xl-3 col-7 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3 align-self-lg-start my-5"
+        >
+          <div class="mount rounded-1 p-1 p-xl-2">
+            <img class="img-fluid rounded-1" src="images/about.jpg" />
+          </div>
+        </div>
+        <div
+          id="about"
+          class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7"
+        >
+          <p>
+            Welcome to my photography website!
+            <br />
+            <br />
+            I am a hobbyist photographer who loves to capture the beauty of the
+            world around me using nothing more than my trusty camera phone. As
+            someone who doesn't have the resources to invest in expensive
+            photography equipment, I have learned to embrace the limitations of
+            my phone's camera and use my creativity in photo editing to create
+            stunning images. I believe that it's not the camera that makes a
+            great photograph, but rather the person behind the camera who has an
+            eye for beauty and knows how to bring that out in the final image. I
+            enjoy exploring different techniques and styles of photography, from
+            landscapes to portraits, and experimenting with various editing
+            tools to enhance the appeal of my images. I believe that editing is
+            an integral part of the photographic process, and with the right
+            techniques, it can transform an ordinary photo into a work of art.
+            Through my photography, I hope to inspire others to see the world
+            around them in a different light and appreciate the beauty that can
+            be found in everyday life. So come along on this journey with me as
+            I explore the world through the lens of my camera phone and share my
+            passion for photography with you.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#aboutNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+  </body>
+</html>
