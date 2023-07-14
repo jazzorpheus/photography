@@ -10,6 +10,7 @@ p.innerText = "Thanks for your message!";
 // submitForm.style.color = "red";
 
 submitForm.addEventListener("click", () => {
+  //   submitForm.preventDefault();
   form.style.visibility = "hidden";
   letterImg.style.transform = "translate(50vw)";
   body.appendChild(p);
