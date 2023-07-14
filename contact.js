@@ -14,6 +14,7 @@ submitForm.addEventListener("click", () => {
   form.style.visibility = "hidden";
   letterImg.style.transform = "translate(50vw)";
   body.appendChild(p);
+  body.style.overflow = "hidden";
   p.style.position = "relative";
   p.style.top = "-40vh";
   p.style.left = "20vw";
