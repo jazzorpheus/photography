@@ -7,8 +7,6 @@ const p = document.createElement("p");
 p.style.visibility = "hidden";
 p.innerText = "Thanks for your message!";
 
-// submitForm.style.color = "red";
-
 submitForm.addEventListener("click", () => {
   //   submitForm.preventDefault();
   form.style.visibility = "hidden";
@@ -19,5 +17,4 @@ submitForm.addEventListener("click", () => {
   p.style.top = "-40vh";
   p.style.left = "20vw";
   p.style.visibility = "visible";
-  p.style.opacity = "1";
 });
